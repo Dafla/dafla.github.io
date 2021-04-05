@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Onderzoekend leren</title>
+  <style>
+
+  body {
+    font-family: sans-serif;
+    overflow-y: hidden;
+
+  }
+
+  div.out {
+    width: 18rem;
+    height: 18rem;
+    margin: 0 15px;
+  }
+
+  .out{
+    -webkit-animation: blur 3s infinite;
+  }
+
+  @-webkit-keyframes blur {
+  0%, 100%  { -webkit-filter: drop-shadow(0.2px 0.2px 2px #f2f2f2); }
+  50% { -webkit-filter: drop-shadow(2px 2px 5px darkgrey); }
+}
+
+  div.verwonderen {
+    background-image: url('verwonderen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2rem;
+    left: 41rem;
+
+  }
+
+  div.verkennen {
+    background-image: url('verkennen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 9rem;
+    left:52rem;
+  }
+
+  div.opzetten {
+    background-image: url('opzetten.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 25rem;
+    left:48rem;
+  }
+
+  div.uitvoeren {
+    background-image: url('uitvoeren.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 29rem;
+    left:30rem;
+  }
+
+  div.conclusie {
+    background-image: url('conclusie.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16rem;
+    left: 18rem;
+  }
+
+  div.presenteren {
+    background-image: url('presenteren.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1rem;
+    left: 24rem;
+  }
+
+  p {
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+  }
+
+  span {
+    line-height: 1.5rem;
+  }
+
+
+  h1 {
+    font-size: 3rem;
+    margin: 1rem;
+    font-family: 'Caveat', cursive;
+    text-transform: uppercase;
+    color: #999;
+    position: absolute;
+    top: 17rem;
+    left: 31rem;
+  }
+
+  div.text1 {
+    width: 20rem;
+    height: 25%;
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 6px;
+  }
+
+  button {
+    position: absolute;
+    top: 30rem;
+    left: 43rem;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    background: #0083B0;  /* fallback for old browsers */
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+  } button:hover {
+    box-shadow: 1px 1px 8px #888888;
+    cursor: pointer;
+  }
+
+  .text1 p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .groep{
+    font-size: 1.25rem;
+    position: absolute;
+    top: 24rem;
+    left: 36rem;
+    width: 20rem;
+    text-align:center;
+    line-height: 1.75rem;
+  }
+
+  .pijl {
+    background-image: url("pijl.png");
+    width: 10rem;
+    height: 10rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 53rem;
+  }
+
+  @media only screen and  (max-width: 1300px) {
+    .pijl {
+      left: 43rem;
+    }
+
+    div.verwonderen {
+      top: -2rem;
+      left: 31rem;
+    }
+
+    div.verkennen {
+      top: 9rem;
+      left:42rem;
+    }
+
+    div.opzetten {
+      top: 25rem;
+      left:38rem;
+    }
+
+    div.uitvoeren {
+      top: 29rem;
+      left:20rem;
+    }
+
+    div.conclusie {
+      top: 16rem;
+      left: 8rem;
+    }
+
+    div.presenteren {
+      top: 1rem;
+      left: 14rem;
+    }
+
+    .groep{
+      top: 24rem;
+      left: 26rem;
+    }
+
+    h1 {
+      top: 17rem;
+      left: 21rem;
+    }
+
+    button {
+      top: 30rem;
+      left: 33rem;
+    }
+
+    div.text1 {
+
+    }
+}
+    @media only screen and  (max-width: 1200px) {
+      .pijl {
+        left: 28rem;
+      }
+
+      div.verwonderen {
+        top: -2rem;
+        left: 16rem;
+      }
+
+      div.verkennen {
+        top: 9rem;
+        left:27rem;
+      }
+
+      div.opzetten {
+        top: 25rem;
+        left:23rem;
+      }
+
+      div.uitvoeren {
+        top: 29rem;
+        left:5rem;
+      }
+
+      div.conclusie {
+        top: 16rem;
+        left: -7rem;
+      }
+
+      div.presenteren {
+        top: 1rem;
+        left: -1rem;
+      }
+
+      .groep{
+        top: 24rem;
+        left: 11rem;
+      }
+
+      h1 {
+        top: 17rem;
+        left: 6rem;
+      }
+
+      button {
+        top: 30rem;
+        left: 18rem;
+      }
+
+      div.text1 {
+        padding: 1rem;
+      }
+}
+
+
+  </style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+  <h1>Onderzoekend leren</h1>
+  <div class="box">
+    <div class="out verwonderen">
+    </div>
+
+    <div class="out verkennen">
+    </div>
+
+    <div class="out opzetten">
+    </div>
+
+    <div class="out uitvoeren">
+    </div>
+
+    <div class="out conclusie">
+    </div>
+
+    <div class="out presenteren">
+    </div>
+
+    <div class="text1">
+      <h2></h2>
+      <span></span>
+      <p></p>
+    </div>
+
+
+    <p class="groep">Geef je nu op voor deze <br> Onderzoek & Innovatie groep!</p>
+    <button><a href="#">DOE MEE</a></button>
+  </div>
+<div class="pijl"><div>
+
+<script>
+
+  $( "div.verwonderen" )
+    .mouseover(function() {
+      $( ".text1" ).find( "h2" ).text( "1. VERWONDEREN");
+      $( ".text1" ).find( "span" ).text( "Wat is onderzoekend leren eigenlijk?");
+      $( ".text1" ).find( "p" ).text( "Hoe ziet een onderzoekende leerling eruit?");
+      $("h2").css("color", "#5bb24b");
+    });
+
+    $( "div.verkennen" )
+      .mouseover(function() {
+        $( ".text1" ).find( "h2" ).text( "2. VERKENNEN");
+        $( ".text1" ).find( "span" ).text( "Wat zijn de voordelen van onderzoekend leren?");
+        $( ".text1" ).find( "p" ).text( "Welke tools heeft de leerkracht nodig?");
+        $("h2").css("color", "#457abd");
+      });
+
+    $( "div.opzetten" )
+      .mouseover(function() {
+        $( ".text1" ).find( "h2" ).text( "3. OPZETTEN");
+        $( ".text1" ).find( "span" ).text( "Is onderzoekend leren wel geschikt voor alle leerlingen?");
+        $( ".text1" ).find( "p" ).text( "");
+        $("h2").css("color", "#7a4796");
+      });
+
+
+    $( "div.uitvoeren" )
+      .mouseover(function() {
+        $( ".text1" ).find( "h2" ).text( "4. UITVOEREN");
+        $( ".text1" ).find( "span" ).text( "Heeft onderzoekend leren al een plek op jouw school?");
+        $( ".text1" ).find( "p" ).text( "Wat gebeurd er op andere scholen?");
+        $("h2").css("color", "#cc4535");
+      });
+
+    $( "div.conclusie" )
+      .mouseover(function() {
+        $( ".text1" ).find( "h2" ).text( "5. CONCLUSIE");
+        $( ".text1" ).find( "span" ).text( "Wil jij meedenken en bijdragen aan het ontwikkelen van onderzoekend leren?");
+        $( ".text1" ).find( "p" ).text( "");
+        $("h2").css("color", "#cc6633");
+      });
+
+    $( "div.presenteren" )
+      .mouseover(function() {
+        $( ".text1" ).find( "h2" ).text( "6. PRESENTEREN");
+        $( ".text1" ).find( "span" ).text( "Heb je zin om je kennis te delen met betrekking tot onderzoekend leren?");
+        $( ".text1" ).find( "p" ).text( "Of wil je meer kennis opdoen?");
+        $("h2").css("color", "#ccae41");
+      });
+
+</script>
+
+</body>
+</html>
